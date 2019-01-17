@@ -5,7 +5,7 @@ layout: base
 <section id="wrapper">
   <header id="header">
   <a id="title" class="index">
-  <!-- <img src="{{ site.baseurl }}/images/logo.png" style="width: 3em"> -->
+  <img src="{{ site.baseurl }}/images/logo.png" style="width: 3em">
   </a>
   </header> <!--header-->
 
@@ -17,12 +17,6 @@ layout: base
       </li>
         {% endfor %}
   </ul> <!--post-list-->
-
-  {% if site.posts.size >= 1 %}
-  <footer id="post-list-footer">
-    <a id="archive-link" href="{{ site.baseurl }}/archive"> <span class="arrow">&larr;</span> Older posts</a>
-  </footer>
-  {% endif %}
 
   <footer id="about-me">
   {% capture introduction %}{% include introduction.md %}{% endcapture %}
